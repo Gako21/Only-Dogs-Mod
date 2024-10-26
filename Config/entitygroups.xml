@@ -1,0 +1,9 @@
+<config>
+	<!-- Sets all zombies to be zombie dogs. -->
+	<!-- 									 -->
+	<csv xpath="/entitygroups/entitygroup[contains(@name, 'Zombie') or contains(@name, 'zombie') or contains(@name, 'Horde')]/text()" delim="\n" op="remove" >zombie*</csv>
+
+	<csv xpath="/entitygroups/entitygroup[contains(@name, 'Zombie') or contains(@name, 'zombie') or contains(@name, 'Horde')]/text()" delim="\n" op="add" >
+		animalZombieDog
+	</csv>
+</config>
